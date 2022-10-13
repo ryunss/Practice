@@ -2,12 +2,8 @@ package zoo;
 
 public class Cat extends Animal{
 
-	String name;
-
-	public Cat() {}
-
 	public Cat(String name) {
-		this.name = name;
+		super(name);
 	}
 	
 	void cry() {

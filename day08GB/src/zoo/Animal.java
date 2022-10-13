@@ -6,7 +6,6 @@ public class Animal {
 	public Animal() {}
 
 	public Animal(String name) {
-		super();
 		this.name = name;
 	}
 	

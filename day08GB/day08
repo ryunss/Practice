@@ -1,0 +1,35 @@
+업캐스팅
+	자식 타입의 객체를 부모 타입으로 변환
+	부모 타입의 객체에 자식 클래스의 필드를 담아주는 것
+
+	자식 생성자로 만들어진 객체를 부모 타입의 객체에 대입
+	ex)
+		SuperCar supercar = new SuperCar();
+		Car car = supercar;
+
+	부모타입의 객체에 자식 생성자를 호출
+	ex)
+		Car car = new SuperCar();
+
+	부모 타입의 매개변수에 자식 객체를 넘길 때
+	ex)
+		void f(Car car){
+			
+		}
+		f(new SuperCar( ));
+다운캐스팅
+	전제조건이 업 캐스팅 된 객체를 다시 자식타입으로 바꾸는 것
+	업 캐스팅 시 잘려나갔던 자식클래스의 추가된 내용을 다시 달아주는 것
+
+	(자식클래스)업캐스팅객체
+
+instanceof
+	객체 instanceof 클래스명 : 객체가 뒤에 오는 클래스 타입인지 비교
+			true / false 두가지 결과로 나오는 조건식
+
+	부모객체 instanceof 부모클래스	true
+	부모객체 instanceof 자식클래스	false
+	자식객체 instanceof 부모클래스	true
+	자식객체 instanceof 자식클래스	true
+	업캐스팅객체 instanceof 부모클래스	true
+	업캐스팅객체 instanceof 자식클래스	true
